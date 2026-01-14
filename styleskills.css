@@ -46,28 +46,35 @@ ul {
   margin-top: 60px;
   margin-bottom: 30px;
   font-size: 1.8rem;
-  color: #87ceeb;
+  color: hwb(0 98% 2%);
 }
 
 /* ===== HARD SKILLS ===== */
 .skills-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 4 logo per baris */
   gap: 40px;
-  flex-wrap: wrap;
+  justify-items: center;
+  align-items: center;
   margin-top: 30px;
   margin-bottom: 60px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Logo skills */
 .skills-container img {
   width: 120px;
   height: auto;
-  opacity: 1; /* supaya langsung terlihat */
-  transform: translateY(0);
+  opacity: 1;
+  /*supayalangsungterlihat*/transform: translateY(0);
   transition: filter 0.4s ease-in-out, transform 0.3s ease-in-out;
   filter: drop-shadow(0px 3px 5px rgba(255, 255, 255, 0.2));
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
 }
 
 /* Hover logo */
